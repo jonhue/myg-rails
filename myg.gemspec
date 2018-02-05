@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path(File.join('..', 'lib', 'myg_rails', 'version'), __FILE__)
+require File.expand_path(File.join('..', 'lib', 'myg', 'version'), __FILE__)
 
 Gem::Specification.new do |gem|
-    gem.name                  = 'myg-rails'
-    gem.version               = MygRails::VERSION
+    gem.name                  = 'myg'
+    gem.version               = Myg::VERSION
     gem.platform              = Gem::Platform::RUBY
     gem.summary               = 'Myg on Rails'
     gem.description           = 'Myg on Rails.'

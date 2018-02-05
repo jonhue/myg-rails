@@ -1,4 +1,4 @@
-module MygRails
+module Myg
 
     class << self
         attr_accessor :configuration

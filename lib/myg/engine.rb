@@ -1,6 +1,6 @@
 require 'rails/railtie'
 
-module MygRails
+module Myg
     class Engine < ::Rails::Engine
     end
 end

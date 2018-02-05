@@ -1,9 +1,9 @@
 require 'rails/railtie'
 
-module MygRails
+module Myg
     class Railtie < Rails::Railtie
 
-        initializer 'myg-rails.mozaic' do
+        initializer 'myg.mozaic' do
             Mozaic.configure do |config|
                 config.define_component 'myg/checkbox', class_name: false, label: false, checked: false, disabled: false
                 config.define_component 'myg/form-field'
@@ -11,9 +11,9 @@ module MygRails
             end
         end
 
-        initializer 'myg-rails.action_controller' do
+        initializer 'myg.action_controller' do
             ActiveSupport.on_load :action_controller do
-                include MygRails::ThemeHelper
+                include Myg::ThemeHelper
             end
         end
 

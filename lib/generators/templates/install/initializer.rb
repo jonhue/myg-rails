@@ -1,4 +1,4 @@
-MygRails.configure do |config|
+Myg.configure do |config|
 
     # Path to Myg styles directory
     # config.assets_dir = 'app/assets/stylesheets/myg'

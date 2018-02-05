@@ -1,6 +1,6 @@
 # Myg on Rails
 
-[![Gem Version](https://badge.fury.io/rb/myg-rails.svg)](https://badge.fury.io/rb/myg-rails) <img src="https://travis-ci.org/jonhue/myg-rails.svg?branch=master" />
+[![Gem Version](https://badge.fury.io/rb/myg.svg)](https://badge.fury.io/rb/myg) <img src="https://travis-ci.org/jonhue/myg-rails.svg?branch=master" />
 
 ---
 
@@ -32,17 +32,17 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install myg-rails
+    $ gem install myg
 
 If you always want to be up to date fetch the latest from GitHub in your `Gemfile`:
 
 ```ruby
-gem 'myg-rails', github: 'jonhue/myg-rails'
+gem 'myg', github: 'jonhue/myg-rails'
 ```
 
 Now run the generator
 
-    $ rails g myg_rails:install
+    $ rails g myg:install
 
 Then add [Myg](https://github.com/jonhue/myg) to your asset pipeline:
 
