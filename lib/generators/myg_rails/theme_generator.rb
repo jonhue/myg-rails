@@ -11,7 +11,7 @@ class MygRails::ThemeGenerator < Rails::Generators::Base
     class_option :name, desc: 'Theme name', type: :string, aliases: '-n'
 
     def create_assets
-        template '_theme.scss', "app/assets/stylesheets/myg/theme/_#{options[:name]}.scss"
+        template '_theme.scss', "#{MygRails.configuration.assets_dir}/theme/_#{options[:name]}.scss"
     end
 
 end

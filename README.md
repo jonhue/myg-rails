@@ -8,6 +8,7 @@
 
 * [Installation](#installation)
 * [Philosophy](#philosophy)
+* [Usage](#usage)
 * [Components](#components)
 * [To Do](#to-do)
 * [Contributing](#contributing)
@@ -39,6 +40,10 @@ If you always want to be up to date fetch the latest from GitHub in your `Gemfil
 gem 'myg-rails', github: 'jonhue/myg-rails'
 ```
 
+Now run the generator
+
+    $ rails g myg_rails:install
+
 Then add [Myg](https://github.com/jonhue/myg) to your asset pipeline:
 
 ```js
@@ -55,6 +60,12 @@ Then add [Myg](https://github.com/jonhue/myg) to your asset pipeline:
 ---
 
 ## Philosophy
+
+...
+
+---
+
+## Usage
 
 ...
 

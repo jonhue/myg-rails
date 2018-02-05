@@ -11,6 +11,7 @@ module MygRails
 
     class Configuration
 
+        attr_accessor :assets_dir
         attr_accessor :themes
         attr_accessor :theme
         attr_accessor :theme_auto
@@ -20,6 +21,7 @@ module MygRails
         attr_accessor :theme_night_time
 
         def initialize
+            @assets_dir = 'app/assets/stylesheets/myg'
             @themes = ['default']
             @theme = 'default'
             @theme_auto = false

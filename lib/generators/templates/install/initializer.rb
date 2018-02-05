@@ -1,5 +1,9 @@
 MygRails.configure do |config|
 
+    # Path to Myg styles directory
+    # config.assets_dir = 'app/assets/stylesheets/myg'
+
+
     ##### MYG-THEME #####
 
     # Array of available themes

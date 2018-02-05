@@ -13,10 +13,10 @@ class MygRails::InstallGenerator < Rails::Generators::Base
     end
 
     def create_assets
-        template 'myg.sass', 'app/assets/stylesheets/myg/myg.sass'
-        template '_variables.sass', 'app/assets/stylesheets/myg/_variables.sass'
-        template 'theme/theme.sass', 'app/assets/stylesheets/myg/theme/theme.sass'
-        template 'theme/_default.scss', 'app/assets/stylesheets/myg/theme/_default.scss'
+        template 'myg.sass', "#{MygRails.configuration.assets_dir}/myg.sass"
+        template '_variables.sass', "#{MygRails.configuration.assets_dir}/_variables.sass"
+        template 'theme/theme.sass', "#{MygRails.configuration.assets_dir}/theme/theme.sass"
+        template 'theme/_default.scss', "#{MygRails.configuration.assets_dir}/theme/_default.scss"
     end
 
 end
