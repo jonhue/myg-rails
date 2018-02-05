@@ -11,5 +11,11 @@ module MygRails
             end
         end
 
+        initializer 'myg-rails.action_controller' do
+            ActiveSupport.on_load :action_controller do
+                include MygRails::ThemeHelper
+            end
+        end
+
     end
 end
