@@ -1,3 +1,4 @@
+require 'material-components-web'
 require 'myg_rails/version'
 
 module MygRails
