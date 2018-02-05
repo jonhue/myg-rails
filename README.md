@@ -9,7 +9,7 @@
 * [Installation](#installation)
 * [Philosophy](#philosophy)
 * [Usage](#usage)
-* [Components](#components)
+    * [Mozaic components](#mozaic-components)
 * [To Do](#to-do)
 * [Contributing](#contributing)
     * [Contributors](#contributors)
@@ -69,9 +69,7 @@ Then add [Myg](https://github.com/jonhue/myg) to your asset pipeline:
 
 ...
 
----
-
-## Components
+### Mozaic components
 
 These are the components currently supported by Myg on Rails:
 
