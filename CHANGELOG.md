@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 1.1.1 - 2018/02/07
+
+* bugfixes
+    * fixed `theme` generator
+
 ### 1.1.0 - 2018/02/07
 
 * features
