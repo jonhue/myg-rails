@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 1.1.2 - 2018/02/08
+
+* enhancements
+    * updated Mozaic dependency
+
 ### 1.1.1 - 2018/02/07
 
 * bugfixes
