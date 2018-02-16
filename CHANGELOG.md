@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 1.2.0 - 2018/02/16
+
+* features
+    * generates customizable variables with `install` generator
+
 ### 1.1.2 - 2018/02/08
 
 * enhancements

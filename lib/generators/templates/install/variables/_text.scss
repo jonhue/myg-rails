@@ -1,0 +1,55 @@
+// Text Size
+$myg-text--size: (
+    p: (sm: px(14), base: px(16), lg: px(18)),
+    h1: (sm: px(36), base: px(48), lg: px(64)),
+    h2: (sm: px(21), base: px(24), lg: px(30)),
+    h3: (sm: px(18), base: px(21), lg: px(24)),
+    h4: (sm: px(16), base: px(18), lg: px(21)),
+    h5: (sm: px(14), base: px(16), lg: px(18)),
+    h6: (sm: px(13), base: px(14), lg: px(16))
+) !default;
+$myg-text--size-mobile: (
+    p: (sm: px(13), base: px(14), lg: px(16)),
+    h1: (sm: px(30), base: px(36), lg: px(48)),
+    h2: (sm: px(18), base: px(21), lg: px(24)),
+    h3: (sm: px(16), base: px(18), lg: px(21)),
+    h4: (sm: px(14), base: px(16), lg: px(18)),
+    h5: (sm: px(13), base: px(14), lg: px(16)),
+    h6: (sm: px(12), base: px(13), lg: px(14))
+) !default;
+
+
+// Text Family
+$myg-text--family: (
+    p: sans-serif,
+    h1: sans-serif,
+    h2: sans-serif,
+    h3: sans-serif,
+    h4: sans-serif,
+    h5: sans-serif,
+    h6: sans-serif
+) !default;
+
+
+// Text Color
+$myg-text--color: (
+    p: color(text, base),
+    h1: color(text, darker),
+    h2: color(text, darker),
+    h3: color(text, darker),
+    h4: color(text, darker),
+    h5: color(text, darker),
+    h6: color(text, darker)
+) !default;
+
+
+// Text Weight
+$myg-text--weight: (
+    p: normal,
+    h1: bold,
+    h2: bold,
+    h3: bold,
+    h4: bold,
+    h5: bold,
+    h6: bold
+) !default;
