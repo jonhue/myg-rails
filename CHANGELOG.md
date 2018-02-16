@@ -4,10 +4,11 @@
 
 * nothing yet
 
-### 1.3.0 - 2018/02/16
+### 2.0.0 - 2018/02/16
 
 * features
     * generates javascript assets with `install` generator
+    * add `javascripts_dir`, `stylesheets_dir` and `es6` configuration options
 
 ### 1.2.0 - 2018/02/16
 
