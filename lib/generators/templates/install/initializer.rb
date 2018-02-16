@@ -4,7 +4,7 @@ Myg.configure do |config|
     # config.javascripts_dir = 'app/assets/javascripts/myg'
 
     # Path to Myg stylehseets directory
-    # config.stylehseets_dir = 'app/assets/stylesheets/myg'
+    # config.stylesheets_dir = 'app/assets/stylesheets/myg'
 
     # Enable or disable Webpack (ES6)
     # config.es6 = true

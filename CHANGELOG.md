@@ -4,6 +4,12 @@
 
 * nothing yet
 
+### 2.0.1 - 2018/02/16
+
+* bugfixes
+    * fixed generated initializer
+    * fixed generated `_variables.sass` file
+
 ### 2.0.0 - 2018/02/16
 
 * features
