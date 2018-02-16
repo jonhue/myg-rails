@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 1.3.0 - 2018/02/16
+
+* features
+    * generates javascript assets with `install` generator
+
 ### 1.2.0 - 2018/02/16
 
 * features

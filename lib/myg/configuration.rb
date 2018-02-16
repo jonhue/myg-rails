@@ -11,7 +11,9 @@ module Myg
 
     class Configuration
 
-        attr_accessor :assets_dir
+        attr_accessor :stylesheets_dir
+        attr_accessor :javascripts_dir
+        attr_accessor :es6
         attr_accessor :themes
         attr_accessor :theme
         attr_accessor :theme_auto
@@ -21,7 +23,9 @@ module Myg
         attr_accessor :theme_night_time
 
         def initialize
-            @assets_dir = 'app/assets/stylesheets/myg'
+            @stylesheets_dir = 'app/assets/stylesheets/myg'
+            @javascripts_dir = 'app/assets/javascripts/myg'
+            @es6 = true
             @themes = ['default']
             @theme = 'default'
             @theme_auto = false
