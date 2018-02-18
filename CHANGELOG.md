@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.1.0 - 2018/02/18
+
+* enhancements
+    * allow passing of various additional options to components
+
 ### 2.0.2 - 2018/02/17
 
 * bugfixes
