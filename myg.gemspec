@@ -6,10 +6,10 @@ Gem::Specification.new do |gem|
     gem.version               = Myg::VERSION
     gem.platform              = Gem::Platform::RUBY
     gem.summary               = 'Myg on Rails'
-    gem.description           = 'Myg on Rails.'
+    gem.description           = 'The opinionated & modular state-of-the-web framework Myg integrated with Ruby on Rails.'
     gem.authors               = 'Jonas Hübotter'
     gem.email                 = 'me@jonhue.me'
-    gem.homepage              = 'https://github.com/jonhue/myg-rails'
+    gem.homepage              = 'https://jonhue.me/myg-on-rails'
     gem.license               = 'MIT'
 
     gem.files                 = Dir['README.md', 'CHANGELOG.md', 'LICENSE', 'lib/**/*', 'app/**/*', 'vendor/**/*']
