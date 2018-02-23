@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.2.0 - 2018/02/23
+
+* features
+    * support Myg 0.4.7
+
 ### 2.1.1 - 2018/02/18
 
 * bugfixes
