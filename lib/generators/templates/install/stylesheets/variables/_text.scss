@@ -1,21 +1,21 @@
 // Text Size
 $myg-text--size: (
-    p: (sm: px(14), base: px(16), lg: px(18)),
-    h1: (sm: px(36), base: px(48), lg: px(64)),
-    h2: (sm: px(21), base: px(24), lg: px(30)),
-    h3: (sm: px(18), base: px(21), lg: px(24)),
-    h4: (sm: px(16), base: px(18), lg: px(21)),
-    h5: (sm: px(14), base: px(16), lg: px(18)),
-    h6: (sm: px(13), base: px(14), lg: px(16))
+    p: (sm: px(14), base: px(16), lg: px(18), bg: px(20)),
+    h1: (sm: px(36), base: px(48), lg: px(64), bg: px(74)),
+    h2: (sm: px(21), base: px(24), lg: px(30), bg: px(36)),
+    h3: (sm: px(18), base: px(21), lg: px(24), bg: px(30)),
+    h4: (sm: px(16), base: px(18), lg: px(21), bg: px(24)),
+    h5: (sm: px(14), base: px(16), lg: px(18), bg: px(21)),
+    h6: (sm: px(13), base: px(14), lg: px(16), bg: px(18))
 ) !default;
 $myg-text--size-mobile: (
-    p: (sm: px(14), base: px(16), lg: px(18)),
-    h1: (sm: px(30), base: px(36), lg: px(48)),
-    h2: (sm: px(18), base: px(21), lg: px(24)),
-    h3: (sm: px(16), base: px(18), lg: px(21)),
-    h4: (sm: px(16), base: px(17), lg: px(18)),
-    h5: (sm: px(15), base: px(16), lg: px(17)),
-    h6: (sm: px(13), base: px(14), lg: px(15))
+    p: (sm: px(14), base: px(16), lg: px(18), bg: px(20)),
+    h1: (sm: px(30), base: px(36), lg: px(40), bg: px(48)),
+    h2: (sm: px(18), base: px(21), lg: px(24), bg: px(30)),
+    h3: (sm: px(16), base: px(18), lg: px(21), bg: px(24)),
+    h4: (sm: px(16), base: px(17), lg: px(18), bg: px(21)),
+    h5: (sm: px(15), base: px(16), lg: px(17), bg: px(18)),
+    h6: (sm: px(13), base: px(14), lg: px(15), bg: px(16))
 ) !default;
 
 
