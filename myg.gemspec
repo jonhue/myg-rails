@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
     gem.description           = 'The opinionated & modular state-of-the-web framework Myg integrated with Ruby on Rails.'
     gem.authors               = 'Jonas Hübotter'
     gem.email                 = 'me@jonhue.me'
-    gem.homepage              = 'https://jonhue.me/myg-on-rails'
+    gem.homepage              = 'https://jonhue.me/repos/myg-on-rails'
     gem.license               = 'MIT'
 
     gem.files                 = Dir['README.md', 'CHANGELOG.md', 'LICENSE', 'lib/**/*', 'app/**/*', 'vendor/**/*']
