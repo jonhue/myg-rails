@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.3.1 - 2018/02/25
+
+* bugfixes
+    * fixed `cannot load such file -- material-components-web`
+
 ### 2.3.0 - 2018/02/25
 
 * features
