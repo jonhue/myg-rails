@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.4.0 - 2018/02/25
+
+* features
+    * added `toast` component
+
 ### 2.3.5 - 2018/02/25
 
 * bugfixes

@@ -1,0 +1,15 @@
+<% html = {
+    class: ['myg-toast mdc-snackbar', options[:class]].join(' '),
+    aria: {
+        live: 'assertive',
+        atomic: true,
+        hidden: true
+    }
+} %>
+
+<%= content_tag 'div', options.merge(html) do %>
+    <div class="mdc-snackbar__text"></div>
+    <div class="mdc-snackbar__action-wrapper">
+        <button type="button" class="mdc-snackbar__action-button"></button>
+    </div>
+<% end %>
