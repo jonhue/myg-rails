@@ -12,8 +12,8 @@
     id: id
 } %>
 
-<%= content_tag 'div', options[:wrapper_html].merge(wrapper_html) do %>
-    <%= tag 'input', options[:input_html].merge(input_html) %>
+<%= content_tag 'div', (options[:wrapper_html] || {}).merge(wrapper_html) do %>
+    <%= tag 'input', (options[:input_html] || {}).merge(input_html) %>
     <div class="mdc-switch__background">
         <div class="mdc-switch__knob"></div>
     </div>

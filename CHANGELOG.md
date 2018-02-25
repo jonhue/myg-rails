@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.3.3 - 2018/02/25
+
+* bugfixes
+    * fixed `undefined method 'merge' for nil:NilClass`
+
 ### 2.3.2 - 2018/02/25
 
 * bugfixes
