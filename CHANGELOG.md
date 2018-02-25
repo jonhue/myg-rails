@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.3.4 - 2018/02/25
+
+* bugfixes
+    * fixed placeholders in form-field inputs
+
 ### 2.3.3 - 2018/02/25
 
 * bugfixes
