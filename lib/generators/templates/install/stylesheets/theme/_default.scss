@@ -23,5 +23,8 @@ $myg-theme: (
     box-shadow: rgba(#000, .05),
     error: #f6809a,
     success: #6adb83,
-    overlay: transparentize(#e7eCf0, 0.13)
+    overlay: (
+        light: transparentize(#e7eCf0, 0.13),
+        dark: transparentize(#14171A, 0.87),
+    )
 );
