@@ -22,7 +22,7 @@
         <% unless options[:label].is_a? Array %>
             <%= component 'myg/label', options[:label_html].merge(label_html) do %><%= options[:label].html_safe %><% end %>
         <% else %>
-            <%= content_tag 'div', options[:label_wrapper_html].merge(label_wrapper_html) %>
+            <%= content_tag 'div', options[:label_wrapper_html].merge(label_wrapper_html) do %>
                 <% options[:label].each_with_index do |label, index| %>
                     <%= component 'myg/label', options[:label_html].merge((index == 0 ? label_html : label_secondary_html)) do %><%= label.html_safe %><% end %>
                 <% end %>
@@ -34,7 +34,7 @@
         <% unless options[:inline_label].is_a? Array %>
             <%= component 'myg/label', options[:label_html].merge(label_html) do %><%= options[:inline_label] %><% end %>
         <% else %>
-            <%= content_tag 'div', options[:label_wrapper_html].merge(label_wrapper_html) %>
+            <%= content_tag 'div', options[:label_wrapper_html].merge(label_wrapper_html) do %>
                 <% options[:inline_label].each_with_index do |label, index| %>
                     <%= component 'myg/label', options[:label_html].merge((index == 0 ? label_html : label_secondary_html)) do %><%= label.html_safe %><% end %>
                 <% end %>

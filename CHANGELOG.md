@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.3.2 - 2018/02/25
+
+* bugfixes
+    * fixed `form-field` component
+
 ### 2.3.1 - 2018/02/25
 
 * bugfixes
