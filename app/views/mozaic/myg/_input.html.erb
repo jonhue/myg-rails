@@ -8,7 +8,7 @@
     id: id
 } %>
 <% defaults = {
-    type: (attribute == 'email' || attribute == 'password' ? attribute : 'text')
+    type: (attribute.to_s == 'email' || attribute.to_s == 'password' ? attribute : 'text')
 } %>
 
 <%= tag 'input', defaults.merge(options.merge(html)) %>

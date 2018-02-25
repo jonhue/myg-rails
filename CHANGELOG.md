@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.3.5 - 2018/02/25
+
+* bugfixes
+    * fixed input automatic type detection for attributes named `'email'` or `'password'`
+
 ### 2.3.4 - 2018/02/25
 
 * bugfixes
