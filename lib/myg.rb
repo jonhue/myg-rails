@@ -1,4 +1,3 @@
-require 'material-components-web'
 require 'myg/version'
 
 module Myg
