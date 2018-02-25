@@ -18,7 +18,6 @@ This translates to:
 
 Possible values for `as` are:
 
-* `button`
 * `checkbox`
 * `input`
 * `radio`
@@ -32,8 +31,7 @@ MygFormField.initAll(document.querySelectorAll('.myg-form-field'));
 
 ### Options
 
-* **`attribute` (mandatory unless button)** The name/attribute of the form element.
-* **`value` (mandatory if button)** The value of a form element.
+* **`attribute` (mandatory)** The name/attribute of the form element.
 * **`class_name`** A string to indicate the class name of the object the attribute belongs to. Used to define the `name` and `id` attributes of a form element. Accepts a string. Can look like: `'user[settings]'`
 * **`label`** Label for form element. Accepts a string or an array of strings.
 * **`inline_label`** Inline label for form element. Accepts a string or an array of strings.

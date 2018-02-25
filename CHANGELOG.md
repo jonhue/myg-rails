@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.3.0 - 2018/02/25
+
+* features
+    * added `button`, `form-field`, `input`, `label`, `slider` and `switch` components
+
 ### 2.2.0 - 2018/02/23
 
 * features
