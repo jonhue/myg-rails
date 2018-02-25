@@ -1,3 +1,7 @@
-<%= component 'mdc-drawer', options do %>
+<% html = {
+    class: ['myg-drawer mdc-drawer mdc-drawer--temporary', options[:class]].join(' ')
+} %>
+
+<%= content_tag 'aside', options.merge(html) do %>
     <%= block %>
 <% end %>

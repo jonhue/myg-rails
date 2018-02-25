@@ -1,0 +1,11 @@
+<% class_name = options.delete :class_name %>
+<% attribute = options.delete :attribute %>
+<% id = class_name ? "#{class_name.to_s.downcase}_#{attribute}" : "#{attribute}" %>
+<% html = {
+    class: ['myg-label', options[:class]].join(' '),
+    for: id
+} %>
+
+<%= content_tag 'label', options.merge(html) do %>
+    <%= block %>
+<% end %>

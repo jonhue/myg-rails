@@ -73,10 +73,15 @@ Then add [Myg](https://github.com/jonhue/myg) to your asset pipeline:
 
 These are the components currently supported by Myg on Rails:
 
+* [`button`](components/myg/button.md)
 * [`checkbox`](components/myg/checkbox.md)
 * [`drawer`](components/myg/drawer.md)
 * [`form-field`](components/myg/form-field.md)
+* [`input`](components/myg/input.md)
+* [`label`](components/myg/label.md)
 * [`radio`](components/myg/radio.md)
+* [`slider`](components/myg/slider.md)
+* [`switch`](components/myg/switch.md)
 * [`toolbar`](components/myg/toolbar.md)
 
 You feel a component is missing? Create an issue to make us aware, or implement it yourself. Pull requests are welcome.

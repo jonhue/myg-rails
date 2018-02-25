@@ -1,3 +1,45 @@
-<%= component 'mdc-form-field', options do %>
-    <%= block %>
+<% wrapper_html = {
+    class: ['myg-form-field', ('myg-form-field--inline-label' if options[:inline_label]), ('myg-form-field--floating-label' if options[:floating_label]), options.dig(:wrapper_html, :class)].join(' ')
+} %>
+<% input_html = {
+    class_name: options[:class_name],
+    attribute: options[:attribute],
+    value: options[:value]
+} %>
+<% label_html = {
+    class_name: options[:class_name],
+    attribute: options[:attribute]
+} %>
+<% label_secondary_html = label_html.merge({
+    class: ['myg-label--secondary', options.dig(:label_html, :class)].join(' ')
+}) %>
+<% label_wrapper_html = {
+    class: ['myg-label--wrapper', options.dig(:label_wrapper_html, :class)].join(' ')
+} %>
+
+<%= content_tag 'div', options[:wrapper_html].merge(wrapper_html) do %>
+    <% if options[:label] %>
+        <% unless options[:label].is_a? Array %>
+            <%= component 'myg/label', options[:label_html].merge(label_html) do %><%= options[:label].html_safe %><% end %>
+        <% else %>
+            <%= content_tag 'div', options[:label_wrapper_html].merge(label_wrapper_html) %>
+                <% options[:label].each_with_index do |label, index| %>
+                    <%= component 'myg/label', options[:label_html].merge((index == 0 ? label_html : label_secondary_html)) do %><%= label.html_safe %><% end %>
+                <% end %>
+            <% end %>
+        <% end %>
+    <% end %>
+    <%= component "myg/#{options[:as]}", options[:input_html].merge(input_html) %>
+    <% if options[:inline_label] %>
+        <% unless options[:inline_label].is_a? Array %>
+            <%= component 'myg/label', options[:label_html].merge(label_html) do %><%= options[:inline_label] %><% end %>
+        <% else %>
+            <%= content_tag 'div', options[:label_wrapper_html].merge(label_wrapper_html) %>
+                <% options[:inline_label].each_with_index do |label, index| %>
+                    <%= component 'myg/label', options[:label_html].merge((index == 0 ? label_html : label_secondary_html)) do %><%= label.html_safe %><% end %>
+                <% end %>
+            <% end %>
+        <% end %>
+    <% end %>
+    <% if options[:floating_label] %><%= component 'myg/label', options[:label_html].merge(label_html) do %><%= options[:floating_label] %><% end %><% end %>
 <% end %>

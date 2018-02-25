@@ -1,0 +1,13 @@
+<% href = options.delete :href %>
+<% value = options.delete :value %>
+<% link_html = {
+    class: ['myg-button', options[:class]].join(' ')
+} %>
+<% input_html = {
+    class: ['myg-button', options[:class]].join(' '),
+    type: 'submit',
+    name: 'commit',
+    value: value
+} %>
+
+<% if href %><%= link_to value, href, options.merge(link_html) %><% else %><%= tag 'input', options.merge(input_html) %><% end %>

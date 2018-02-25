@@ -21,7 +21,6 @@ Gem::Specification.new do |gem|
     gem.add_dependency 'activesupport', '>= 5.0'
     gem.add_dependency 'actionpack', '>= 5.0'
     gem.add_dependency 'mozaic', '~> 2.0'
-    gem.add_dependency 'material-components-web', '~> 2.0'
 
     gem.add_development_dependency 'rspec', '~> 3.7'
     gem.add_development_dependency 'rubocop', '~> 0.52'

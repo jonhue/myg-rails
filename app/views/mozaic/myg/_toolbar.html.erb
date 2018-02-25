@@ -1,3 +1,7 @@
-<%= component 'mdc-toolbar', options do %>
+<% html = {
+    class: ['myg-toolbar mdc-toolbar', options[:class]].join(' ')
+} %>
+
+<%= content_tag 'header', options.merge(html) do %>
     <%= block %>
 <% end %>

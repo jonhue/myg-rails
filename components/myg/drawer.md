@@ -17,7 +17,8 @@ This translates to:
 </aside>
 ```
 
-### Options
+#### Javascript
 
-* **`class`** Add classes to the generated drawer. Accepts a string.
-* **`id`** Add an id to the generated drawer. Accepts a string.
+```js
+MygDrawer.init(document.querySelector('.myg-drawer'));
+```
