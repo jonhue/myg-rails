@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.5.1 - 2018/03/01
+
+* bugfixes
+    * fixed `tabs` generator
+
 ### 2.5.0 - 2018/03/01
 
 * features
