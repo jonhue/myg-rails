@@ -1,0 +1,3 @@
+<h1>Title</h1>
+
+<%%= component 'myg/tabs', update_history: true, tabs: <%= options[:method_names]&.map! { |t| { name: t.titleize, id: t, partial: t } } %> %>

@@ -4,6 +4,12 @@
 
 * nothing yet
 
+### 2.5.0 - 2018/02/25
+
+* features
+    * added `tabs` generator
+    * added `tabs` component
+
 ### 2.4.0 - 2018/02/25
 
 * features

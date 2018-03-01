@@ -14,6 +14,7 @@ module Myg
                 config.define_component 'myg/radio'
                 config.define_component 'myg/slider', discrete: false, disabled: false, value: 0, min: 0, max: 50, label: 'Select value'
                 config.define_component 'myg/switch'
+                config.define_component 'myg/tabs', async: false, update_history: false
                 config.define_component 'myg/toast'
                 config.define_component 'myg/toolbar'
             end

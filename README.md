@@ -82,6 +82,8 @@ These are the components currently supported by Myg on Rails:
 * [`radio`](components/myg/radio.md)
 * [`slider`](components/myg/slider.md)
 * [`switch`](components/myg/switch.md)
+* [`tabs`](components/myg/tabs.md)
+* [`toast`](components/myg/toast.md)
 * [`toolbar`](components/myg/toolbar.md)
 
 You feel a component is missing? Create an issue to make us aware, or implement it yourself. Pull requests are welcome.
