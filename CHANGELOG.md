@@ -4,7 +4,7 @@
 
 * nothing yet
 
-### 2.5.0 - 2018/02/25
+### 2.5.0 - 2018/03/01
 
 * features
     * added `tabs` generator
