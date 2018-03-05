@@ -4,6 +4,12 @@
 
 * nothing yet
 
+### 2.5.2 - 2018/03/05
+
+* bugfixes
+    * fixed `tabs` generator
+    * fixed `tabs` component
+
 ### 2.5.1 - 2018/03/01
 
 * bugfixes
