@@ -25,18 +25,19 @@
         </div>
         <div class="myg-tabs--panel" id="myg-tabs--panel-success" role="tabpanel" aria-hidden="true"><%= options.dig(:success, :content) || render(partial: options.dig(:success, :partial), locals: options.dig(:success, :partial_locals)) %></div>
         <div class="myg-tabs--panel" id="myg-tabs--panel-error" role="tabpanel" aria-hidden="true"><%= block %></div>
-    <% end %>
-    <% options[:tabs]&.each do |tab| %>
-        <% panel_html = {
-            class: ['myg-tabs--panel', options.dig(:panel_html, :class), ('myg-tabs--shown' if tab[:active])].join(' '),
-            id: tab[:id],
-            role: 'tabpanel',
-            aria: {
-                hidden: (tab[:active] ? false : true)
-            }
-        } %>
-        <%= content_tag 'div', (options[:panel_html] || {}).merge(panel_html) do %>
-            <%= tab[:content] || render(partial: tab[:partial], locals: tab[:partial_locals]) %>
+    <% else %>
+        <% options[:tabs]&.each do |tab| %>
+            <% panel_html = {
+                class: ['myg-tabs--panel', options.dig(:panel_html, :class), ('myg-tabs--shown' if tab[:active])].join(' '),
+                id: tab[:id],
+                role: 'tabpanel',
+                aria: {
+                    hidden: (tab[:active] ? false : true)
+                }
+            } %>
+            <%= content_tag 'div', (options[:panel_html] || {}).merge(panel_html) do %>
+                <%= tab[:content] || render(partial: tab[:partial], locals: tab[:partial_locals]) %>
+            <% end %>
         <% end %>
     <% end %>
 <% end %>
