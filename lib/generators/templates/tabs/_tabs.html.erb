@@ -1,3 +1,5 @@
 <h1>Title</h1>
 
-<%%= component 'myg/tabs', update_history: true, tabs: <%= options[:method_names]&.map! { |t| { name: t.titleize, id: t, partial: t } } %> %>
+<%%= component 'myg/tabs', async: true, success: local_assigns[:success], tabs: <%= options[:method_names]&.map! { |t| { name: t.titleize, href: root_url } } %> do %>
+    <p>An error occured</p>
+<%% end %>
