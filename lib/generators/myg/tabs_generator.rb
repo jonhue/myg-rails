@@ -15,8 +15,8 @@ class Myg::TabsGenerator < Rails::Generators::Base
         template '_tabs.html.erb', "app/views/#{options[:controller]}/_tabs.html.erb"
         options[:method_names]&.each do |name|
             @name = name[:name].underscore
-            template 'tab.html.erb', "app/views/#{options[:controller]}/_#{@name}.html.erb"
-            template '_tab.html.erb', "app/views/#{options[:controller]}/#{@name}.html.erb"
+            template 'tab.html.erb', "app/views/#{options[:controller]}/#{@name}.html.erb"
+            template '_tab.html.erb', "app/views/#{options[:controller]}/_#{@name}.html.erb"
         end
     end
 
