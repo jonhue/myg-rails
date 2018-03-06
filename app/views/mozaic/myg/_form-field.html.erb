@@ -41,6 +41,7 @@
         <% end %>
     <% else %>
         <%= component "myg/#{options[:as]}", (options[:input_html] || {}).merge(input_html) %>
+        <% if options[:file] %><%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:file] %><% end %><% end %>
     <% end %>
     <% if options[:inline_label] %>
         <% unless options[:inline_label].is_a? Array %>
