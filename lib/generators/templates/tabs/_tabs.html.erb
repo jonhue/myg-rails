@@ -1,5 +1,5 @@
 <h1>Title</h1>
 
-<%%= component 'myg/tabs', async: true, success: local_assigns[:success], tabs: <%= options[:method_names]&.map! { |t| { name: t.titleize, href: root_url } } %> do %>
+<%%= component 'myg/tabs', async: true, success: local_assigns[:success], tabs: <%= options[:method_names]&.map! { |t| { name: t.titleize, href: '' } } %> do %>
     <p>An error occured</p>
 <%% end %>
