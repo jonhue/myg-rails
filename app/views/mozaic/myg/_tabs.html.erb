@@ -10,11 +10,11 @@
         <% tab_html = {
             class: ['mdc-tab', options.dig(:tab_html, :class), ('mdc-tab--active' if tab[:active])].join(' '),
             aria: {
-                controls: tab[:id]
+                controls: tab[:name].underscore
             },
             role: 'tab'
         } %>
-        <%= link_to tab[:name], tab[:href] || "##{tab[:id]}", (options[:tab_html] || {}).merge(tab_html) %>
+        <%= link_to tab[:name], tab[:href] || "##{tab[:name].underscore}", (options[:tab_html] || {}).merge(tab_html) %>
     <% end %>
     <span class="mdc-tab-bar__indicator"></span>
 <% end %>
@@ -29,7 +29,7 @@
         <% options[:tabs]&.each do |tab| %>
             <% panel_html = {
                 class: ['myg-tabs--panel', options.dig(:panel_html, :class), ('myg-tabs--shown' if tab[:active])].join(' '),
-                id: tab[:id],
+                id: tab[:name].underscore,
                 role: 'tabpanel',
                 aria: {
                     hidden: (tab[:active] ? false : true)
