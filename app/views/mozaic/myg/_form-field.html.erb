@@ -1,13 +1,15 @@
 <% wrapper_html = {
-    class: ['myg-form-field', ('myg-form-field--inline-label' if options[:inline_label]), ('myg-form-field--floating-label' if options[:floating_label]), options.dig(:wrapper_html, :class)].join(' ')
+    class: ['myg-form-field', ('myg-form-field--inline-label' if options[:inline_label]), ('myg-form-field--floating-label' if options[:floating_label]), ('myg-form-field--file' if options[:file]), options.dig(:wrapper_html, :class)].join(' ')
 } %>
 <% if options[:floating_label] %><% input_html = {
     class_name: options[:class_name],
     attribute: options[:attribute],
+    type: ('file' if options[:file]),
     placeholder: options[:floating_label]
 } %><% else %><% input_html = {
     class_name: options[:class_name],
-    attribute: options[:attribute]
+    attribute: options[:attribute],
+    type: ('file' if options[:file])
 } %><% end %>
 <% label_html = {
     class_name: options[:class_name],
