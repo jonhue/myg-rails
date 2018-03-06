@@ -32,7 +32,14 @@
             <% end %>
         <% end %>
     <% end %>
-    <%= component "myg/#{options[:as]}", (options[:input_html] || {}).merge(input_html) %>
+    <% if options[:floating_label] %>
+        <%= content_tag 'div', class: 'myg-input--container' do %>
+            <%= component "myg/#{options[:as]}", (options[:input_html] || {}).merge(input_html) %>
+            <%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:floating_label] %><% end %>
+        <% end %>
+    <% else %>
+        <%= component "myg/#{options[:as]}", (options[:input_html] || {}).merge(input_html) %>
+    <% end %>
     <% if options[:inline_label] %>
         <% unless options[:inline_label].is_a? Array %>
             <%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:inline_label] %><% end %>
@@ -44,5 +51,4 @@
             <% end %>
         <% end %>
     <% end %>
-    <% if options[:floating_label] %><%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:floating_label] %><% end %><% end %>
 <% end %>
