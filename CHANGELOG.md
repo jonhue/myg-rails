@@ -4,6 +4,14 @@
 
 * nothing yet
 
+### 2.6.0 - 2018/03/07
+
+* features
+    * add `titlebar` component
+    * add `file` option to `form-field` component
+* bugfixes
+    * fixed `tabs` generator
+
 ### 2.5.2 - 2018/03/05
 
 * bugfixes
