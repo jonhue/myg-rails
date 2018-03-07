@@ -4,13 +4,14 @@
 <% if options[:floating_label] %><% input_html = {
     class_name: options[:class_name],
     attribute: options[:attribute],
-    type: ('file' if options[:file]),
     placeholder: options[:floating_label]
 } %><% else %><% input_html = {
     class_name: options[:class_name],
-    attribute: options[:attribute],
-    type: ('file' if options[:file])
+    attribute: options[:attribute]
 } %><% end %>
+<% input_defaults = {
+    type: ('file' if options[:file])
+} %>
 <% label_html = {
     class_name: options[:class_name],
     attribute: options[:attribute]
@@ -36,11 +37,11 @@
     <% end %>
     <% if options[:floating_label] %>
         <%= content_tag 'div', class: 'myg-input--container' do %>
-            <%= component "myg/#{options[:as]}", (options[:input_html] || {}).merge(input_html) %>
+            <%= component "myg/#{options[:as]}", input_defaults.merge((options[:input_html] || {}).merge(input_html)) %>
             <%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:floating_label] %><% end %>
         <% end %>
     <% else %>
-        <%= component "myg/#{options[:as]}", (options[:input_html] || {}).merge(input_html) %>
+        <%= component "myg/#{options[:as]}", input_defaults.merge((options[:input_html] || {}).merge(input_html)) %>
         <% if options[:file] %><%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:file] %><% end %><% end %>
     <% end %>
     <% if options[:inline_label] %>
