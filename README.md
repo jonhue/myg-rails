@@ -79,6 +79,7 @@ These are the components currently supported by Myg on Rails:
 * [`form-field`](components/myg/form-field.md)
 * [`input`](components/myg/input.md)
 * [`label`](components/myg/label.md)
+* [`progress`](components/myg/progress.md)
 * [`radio`](components/myg/radio.md)
 * [`slider`](components/myg/slider.md)
 * [`switch`](components/myg/switch.md)
