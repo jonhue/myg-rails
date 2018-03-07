@@ -11,6 +11,7 @@ module Myg
                 config.define_component 'myg/form-field'
                 config.define_component 'myg/input'
                 config.define_component 'myg/label'
+                config.define_component 'myg/progress', indeterminate: false
                 config.define_component 'myg/radio'
                 config.define_component 'myg/slider', discrete: false, disabled: false, value: 0, min: 0, max: 50, label: 'Select value'
                 config.define_component 'myg/switch'
