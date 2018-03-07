@@ -1,5 +1,5 @@
 <% html = {
-    class: ['myg-progress mdc-linear-progress', options[:class]].join(' '),
+    class: ['myg-progress mdc-linear-progress', ('mdc-linear-progress--indeterminate' if options.delete(:indeterminate)), options[:class]].join(' '),
     role: 'progressbar'
 } %>
 
