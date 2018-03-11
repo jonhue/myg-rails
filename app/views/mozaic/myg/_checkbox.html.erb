@@ -1,3 +1,4 @@
+<% raise options.inspect %>
 <% class_name = options.delete :class_name %>
 <% attribute = options.delete :attribute %>
 <% values = options.delete(:values) || [0, 1] %>
@@ -6,7 +7,6 @@
 <% wrapper_html = {
     class: ['myg-checkbox mdc-checkbox', options.dig(:wrapper_html, :class), ('mdc-checkbox--disabled' if options.dig(:input_html, :disabled))].join(' ')
 } %>
-<% raise options.dig(:input_html).inspect %>
 <% input_html = {
     type: 'checkbox',
     class: ['mdc-checkbox__native-control', options.dig(:input_html, :class)].join(' '),
