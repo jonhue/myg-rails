@@ -6,12 +6,14 @@
 <% wrapper_html = {
     class: ['myg-checkbox mdc-checkbox', options.dig(:wrapper_html, :class), ('mdc-checkbox--disabled' if options.dig(:input_html, :disabled))].join(' ')
 } %>
+<% raise options.dig(:input_html, :checked).inspect %>
 <% input_html = {
     type: 'checkbox',
     class: ['mdc-checkbox__native-control', options.dig(:input_html, :class)].join(' '),
     name: name,
     id: id,
-    value: values.last
+    value: values.last,
+    checked: options.dig(:input_html, :checked)
 } %>
 
 <%= content_tag 'div', (options[:wrapper_html] || {}).merge(wrapper_html) do %>
