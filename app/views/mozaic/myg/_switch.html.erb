@@ -6,9 +6,9 @@
 <% wrapper_html = {
     class: ['myg-switch mdc-switch', options.dig(:wrapper_html, :class)].join(' ')
 } %>
-<% input_html = {
+<% html = {
     type: 'checkbox',
-    class: ['mdc-switch__native-control', options.dig(:input_html, :class)].join(' '),
+    class: ['mdc-switch__native-control', options.dig(:html, :class)].join(' '),
     name: name,
     id: id,
     value: values.last
@@ -16,7 +16,7 @@
 
 <%= content_tag 'div', (options[:wrapper_html] || {}).merge(wrapper_html) do %>
     <input value="<%= values.first %>" type="hidden" name="<%= name %>" />
-    <%= tag 'input', (options[:input_html] || {}).merge(input_html) %>
+    <%= tag 'input', (options[:html] || {}).merge(html) %>
     <div class="mdc-switch__background">
         <div class="mdc-switch__knob"></div>
     </div>
