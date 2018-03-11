@@ -7,18 +7,17 @@
 <% wrapper_html = {
     class: ['myg-checkbox mdc-checkbox', options.dig(:wrapper_html, :class), ('mdc-checkbox--disabled' if options.dig(:input_html, :disabled))].join(' ')
 } %>
-<% input_html = {
+<% html = {
     type: 'checkbox',
-    class: ['mdc-checkbox__native-control', options.dig(:input_html, :class)].join(' '),
+    class: ['mdc-checkbox__native-control', options.dig(:html, :class)].join(' '),
     name: name,
     id: id,
-    value: values.last,
-    checked: options.dig(:input_html, :checked)
+    value: values.last
 } %>
 
 <%= content_tag 'div', (options[:wrapper_html] || {}).merge(wrapper_html) do %>
     <input value="<%= values.first %>" type="hidden" name="<%= name %>" />
-    <%= tag 'input', (options[:input_html] || {}).merge(input_html) %>
+    <%= tag 'input', (options[:html] || {}).merge(html) %>
     <div class="mdc-checkbox__background">
         <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
             <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
