@@ -6,7 +6,7 @@
 <% wrapper_html = {
     class: ['myg-checkbox mdc-checkbox', options.dig(:wrapper_html, :class), ('mdc-checkbox--disabled' if options.dig(:input_html, :disabled))].join(' ')
 } %>
-<% raise options.dig(:input_html, :checked).inspect %>
+<% raise options.dig(:input_html).inspect %>
 <% input_html = {
     type: 'checkbox',
     class: ['mdc-checkbox__native-control', options.dig(:input_html, :class)].join(' '),
