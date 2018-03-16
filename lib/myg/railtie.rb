@@ -9,6 +9,7 @@ module Myg
                 config.define_component 'myg/checkbox'
                 config.define_component 'myg/drawer'
                 config.define_component 'myg/form-field'
+                config.define_component 'myg/hint'
                 config.define_component 'myg/input'
                 config.define_component 'myg/label'
                 config.define_component 'myg/progress', indeterminate: false
