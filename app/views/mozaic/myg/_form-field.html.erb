@@ -56,6 +56,6 @@
         <% end %>
     <% end %>
     <% if options[:hint] %>
-        <%= component 'myg/hint', options[:hint_html] || {} do %><%= options[:hint] %><% end %>
+        <%= component 'myg/hint', options[:hint_html] || {} do %><%= options[:hint].html_safe %><% end %>
     <% end %>
 <% end %>
