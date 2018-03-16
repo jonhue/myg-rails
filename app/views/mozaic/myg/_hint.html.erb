@@ -3,5 +3,5 @@
 } %>
 
 <%= content_tag 'div', options.merge(html) do %>
-    <%= block %>
+    <%= block.html_safe %>
 <% end %>
