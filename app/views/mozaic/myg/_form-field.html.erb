@@ -55,4 +55,7 @@
             <% end %>
         <% end %>
     <% end %>
+    <% if options[:hint] %>
+        <%= component 'myg/hint', options[:hint_html] || {} do %><%= options[:hint] %><% end %>
+    <% end %>
 <% end %>

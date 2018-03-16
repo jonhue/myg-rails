@@ -1,0 +1,7 @@
+<% html = {
+    class: ['myg-hint', options[:class]].join(' ')
+} %>
+
+<%= content_tag 'div', options.merge(html) do %>
+    <%= block.html_safe %>
+<% end %>
