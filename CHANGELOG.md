@@ -4,6 +4,14 @@
 
 * nothing yet
 
+### 2.7.0 - 2018/03/16
+
+* features
+    * add `hint` component
+    * add `progress` component
+* enhancements
+    * added `id` option to `tabs` component
+
 ### 2.6.0 - 2018/03/07
 
 * features

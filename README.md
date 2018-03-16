@@ -77,6 +77,7 @@ These are the components currently supported by Myg on Rails:
 * [`checkbox`](components/myg/checkbox.md)
 * [`drawer`](components/myg/drawer.md)
 * [`form-field`](components/myg/form-field.md)
+* [`hint`](components/myg/hint.md)
 * [`input`](components/myg/input.md)
 * [`label`](components/myg/label.md)
 * [`progress`](components/myg/progress.md)
