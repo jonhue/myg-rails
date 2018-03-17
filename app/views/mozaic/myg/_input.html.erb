@@ -1,7 +1,7 @@
 <% class_name = options.delete :class_name %>
 <% attribute = options.delete :attribute %>
 <% name = class_name ? "#{class_name.to_s.downcase}[#{attribute}]" : "#{attribute}" %>
-<% id = class_name ? "#{class_name.to_s.downcase}_#{attribute}" : "#{attribute}" %>
+<% id = options[:id] || class_name ? "#{class_name.to_s.downcase}_#{attribute}" : "#{attribute}" %>
 <% html = {
     class: ['myg-input', options[:class]].join(' '),
     name: name,
