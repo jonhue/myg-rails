@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.8.0 - 2018/03/17
+
+* enhancements
+    * added `identifier` option to form components
+
 ### 2.7.0 - 2018/03/16
 
 * features
