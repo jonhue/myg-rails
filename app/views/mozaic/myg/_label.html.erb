@@ -1,6 +1,7 @@
-<% class_name = options.delete :class_name %>
+<% identifier = options.delete :identifier %>
+<% class_name = identifier ? options.delete(:class_name) : "#{options.delete(:class_name)}_#{identifier}" %>
 <% attribute = options.delete :attribute %>
-<% id = options[:for] || class_name ? "#{class_name.to_s.downcase}_#{attribute}" : "#{attribute}" %>
+<% id = class_name ? "#{class_name.to_s.downcase}_#{attribute}" : "#{attribute}" %>
 <% html = {
     class: ['myg-label', options[:class]].join(' '),
     for: id
