@@ -1,9 +1,9 @@
 <% class_name = options.delete :class_name %>
 <% attribute = options.delete :attribute %>
-<% for = options[:for] || class_name ? "#{class_name.to_s.downcase}_#{attribute}" : "#{attribute}" %>
+<% id = options[:for] || class_name ? "#{class_name.to_s.downcase}_#{attribute}" : "#{attribute}" %>
 <% html = {
     class: ['myg-label', options[:class]].join(' '),
-    for: for
+    for: id
 } %>
 
 <%= content_tag 'label', options.merge(html) do %>
