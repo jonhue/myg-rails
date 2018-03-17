@@ -4,17 +4,20 @@
 <% if options[:floating_label] %><% input_html = {
     class_name: options[:class_name],
     attribute: options[:attribute],
+    id: options[:id],
     placeholder: options[:floating_label]
 } %><% else %><% input_html = {
     class_name: options[:class_name],
-    attribute: options[:attribute]
+    attribute: options[:attribute],
+    id: options[:id]
 } %><% end %>
 <% input_defaults = {
     type: ('file' if options[:file])
 } %>
 <% label_html = {
     class_name: options[:class_name],
-    attribute: options[:attribute]
+    attribute: options[:attribute],
+    id: options[:id]
 } %>
 <% label_secondary_html = label_html.merge({
     class: ['myg-label--secondary', options.dig(:label_html, :class)].join(' ')
