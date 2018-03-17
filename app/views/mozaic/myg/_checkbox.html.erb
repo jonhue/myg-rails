@@ -2,7 +2,7 @@
 <% attribute = options.delete :attribute %>
 <% values = options.delete(:values) || [0, 1] %>
 <% name = class_name ? "#{class_name.to_s.downcase}[#{attribute}]" : "#{attribute}" %>
-<% id = class_name ? "#{class_name.to_s.downcase}_#{attribute}" : "#{attribute}" %>
+<% id = options[:id] || class_name ? "#{class_name.to_s.downcase}_#{attribute}" : "#{attribute}" %>
 <% wrapper_html = {
     class: ['myg-checkbox mdc-checkbox', options.dig(:wrapper_html, :class), ('mdc-checkbox--disabled' if options.dig(:input_html, :disabled))].join(' ')
 } %>
