@@ -3,7 +3,7 @@
 <% identifier = options.delete :identifier %>
 <% value = options.delete :value %>
 <% name = class_name ? "#{class_name.to_s.downcase}[#{attribute}]" : "#{attribute}" %>
-<% id = [class_name, identifier, attribute, value].map { |s| s.to_s.downcase }.join('_') %>
+<% id = [class_name, identifier, attribute, value].map { |s| s.to_s.downcase }.join('_').tr('[', '_').tr(']', '_') %>
 <% wrapper_html = {
     class: ['myg-radio mdc-radio', options.dig(:wrapper_html, :class), ('mdc-radio--disabled' if options.dig(:input_html, :disabled))].join(' ')
 } %>
