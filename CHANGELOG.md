@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.8.1 - 2018/03/26
+
+* bugfixes
+    * fixed IDs of form components
+
 ### 2.8.0 - 2018/03/17
 
 * enhancements
