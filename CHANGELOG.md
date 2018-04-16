@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.9.0 - 2018/04/16
+
+* features
+    * add `textarea` component
+
 ### 2.8.1 - 2018/03/26
 
 * bugfixes
