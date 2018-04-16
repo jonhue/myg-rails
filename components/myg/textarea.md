@@ -11,7 +11,7 @@
 This translates to:
 
 ```html
-<textarea class="myg-input mdc-input"></textarea>
+<textarea class="myg-textarea mdc-input"></textarea>
 ```
 
 ### Options
