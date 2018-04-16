@@ -85,6 +85,7 @@ These are the components currently supported by Myg on Rails:
 * [`slider`](components/myg/slider.md)
 * [`switch`](components/myg/switch.md)
 * [`tabs`](components/myg/tabs.md)
+* [`textarea`](components/myg/textarea.md)
 * [`titlebar`](components/myg/titlebar.md)
 * [`toast`](components/myg/toast.md)
 * [`toolbar`](components/myg/toolbar.md)
