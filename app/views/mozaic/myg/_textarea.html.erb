@@ -9,4 +9,4 @@
     id: id
 } %>
 
-<%= content_tag 'textarea', options.merge(html) %>
+<%= content_tag 'textarea', options.merge(html) do %><%= block %><% end %>
