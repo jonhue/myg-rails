@@ -17,6 +17,7 @@ module Myg
                 config.define_component 'myg/slider', discrete: false, disabled: false, value: 0, min: 0, max: 50, label: 'Select value'
                 config.define_component 'myg/switch'
                 config.define_component 'myg/tabs', async: false
+                config.define_component 'myg/textarea'
                 config.define_component 'myg/titlebar', close: true
                 config.define_component 'myg/toast'
                 config.define_component 'myg/toolbar'
