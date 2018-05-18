@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.10.0 - 2018/05/18
+
+* features
+    * update to Myg 0.13.0
+
 ### 2.9.0 - 2018/04/16
 
 * features

@@ -1,5 +1,5 @@
 <% wrapper_html = {
-    class: ['myg-form-field', ('myg-form-field--inline-label' if options[:inline_label]), ('myg-form-field--floating-label' if options[:floating_label]), ('myg-form-field--file' if options[:file]), options.dig(:wrapper_html, :class)].join(' ')
+    class: [('myg-form-field' unless options[:file]), ('-inline-label' if options[:inline_label]), ('-floating-label' if options[:floating_label]), ('myg-form-field--file' if options[:file]), options.dig(:wrapper_html, :class)].join(' ')
 } %>
 <% if options[:floating_label] %><% input_html = {
     class_name: options[:class_name],
@@ -39,7 +39,7 @@
         <% end %>
     <% end %>
     <% if options[:floating_label] %>
-        <%= content_tag 'div', class: 'myg-input--container' do %>
+        <%= content_tag 'div', class: 'myg-input__container' do %>
             <%= component "myg/#{options[:as]}", input_defaults.merge((options[:input_html] || {}).merge(input_html)) %>
             <%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:floating_label] %><% end %>
         <% end %>

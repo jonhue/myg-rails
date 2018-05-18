@@ -1,5 +1,4 @@
-// Layout
 $myg-layout: (
-    toolbar-height: px(55),
-    sidebar-width: minmax(33%, px(400))
-) !default;
+    toolbar-height: myg__px(55),
+    sidebar-width: minmax(33%, myg__px(400))
+);

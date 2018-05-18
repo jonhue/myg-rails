@@ -4,7 +4,7 @@
 <% name = class_name ? "#{class_name.to_s.downcase}[#{attribute}]" : "#{attribute}" %>
 <% id = [class_name, identifier, attribute].map { |s| s.to_s.downcase }.join('_').tr('[', '_').tr(']', '_') %>
 <% html = {
-    class: ['myg-textarea', options[:class]].join(' '),
+    class: ['myg-input__textarea', options[:class]].join(' '),
     name: name,
     id: id
 } %>

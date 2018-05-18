@@ -1,5 +1,4 @@
-// Animations
-$myg-animate: (
+$myg-animate__animation: (
     shake: (
         duration: .82s,
         easing: cubic-bezier(.36,.07,.19,.97) both
@@ -8,11 +7,10 @@ $myg-animate: (
         duration: 3s,
         easing: ease-in-out
     )
-) !default;
+);
 
 
-// Transitions
-$myg-animate--transitions: (
+$myg-animate__transition: (
     duration: .15s,
     easing: ease-out
-) !default;
+);
