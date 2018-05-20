@@ -19,7 +19,6 @@ class Myg::InstallGenerator < Rails::Generators::Base
         template 'stylesheets/variables/_action-button.scss', "#{Myg.configuration&.stylesheets_dir || 'app/assets/stylesheets/myg'}/variables/_action-button.scss"
         template 'stylesheets/variables/_animate.scss', "#{Myg.configuration&.stylesheets_dir || 'app/assets/stylesheets/myg'}/variables/_animate.scss"
         template 'stylesheets/variables/_base.scss', "#{Myg.configuration&.stylesheets_dir || 'app/assets/stylesheets/myg'}/variables/_base.scss"
-        template 'stylesheets/variables/_elevation.scss', "#{Myg.configuration&.stylesheets_dir || 'app/assets/stylesheets/myg'}/variables/_elevation.scss"
         template 'stylesheets/variables/_font.scss', "#{Myg.configuration&.stylesheets_dir || 'app/assets/stylesheets/myg'}/variables/_font.scss"
         template 'stylesheets/variables/_footer.scss', "#{Myg.configuration&.stylesheets_dir || 'app/assets/stylesheets/myg'}/variables/_footer.scss"
         template 'stylesheets/variables/_grid.scss', "#{Myg.configuration&.stylesheets_dir || 'app/assets/stylesheets/myg'}/variables/_grid.scss"
