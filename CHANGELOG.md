@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.10.2 - 2018/05/20
+
+* bugfixes
+    * fixed `Could not find "icon.js" in any of your source paths` when running the `install` generator
+
 ### 2.10.1 - 2018/05/20
 
 * bugfixes

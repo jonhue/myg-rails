@@ -42,7 +42,6 @@ class Myg::InstallGenerator < Rails::Generators::Base
             template 'javascripts/dropdown.js', "#{Myg.configuration&.javascripts_dir || 'app/assets/javascripts/myg'}/dropdown.js"
             template 'javascripts/footer.js', "#{Myg.configuration&.javascripts_dir || 'app/assets/javascripts/myg'}/footer.js"
             template 'javascripts/form-field.js', "#{Myg.configuration&.javascripts_dir || 'app/assets/javascripts/myg'}/form-field.js"
-            template 'javascripts/icon.js', "#{Myg.configuration&.javascripts_dir || 'app/assets/javascripts/myg'}/icon.js"
             template 'javascripts/input.js', "#{Myg.configuration&.javascripts_dir || 'app/assets/javascripts/myg'}/input.js"
             template 'javascripts/menu.js', "#{Myg.configuration&.javascripts_dir || 'app/assets/javascripts/myg'}/menu.js"
             template 'javascripts/modal.js', "#{Myg.configuration&.javascripts_dir || 'app/assets/javascripts/myg'}/modal.js"
