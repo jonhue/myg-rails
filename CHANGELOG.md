@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.10.3 - 2018/05/27
+
+* bugfixes
+    * fixed complex form fields
+
 ### 2.10.2 - 2018/05/20
 
 * bugfixes

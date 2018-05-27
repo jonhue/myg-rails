@@ -23,7 +23,7 @@
     class: ['myg-label--secondary', options.dig(:label_html, :class)].join(' ')
 }) %>
 <% label_wrapper_html = {
-    class: ['myg-label--container', options.dig(:label_wrapper_html, :class)].join(' ')
+    class: ['myg-label__container', options.dig(:label_wrapper_html, :class)].join(' ')
 } %>
 
 <%= content_tag 'div', (options[:wrapper_html] || {}).merge(wrapper_html) do %>
