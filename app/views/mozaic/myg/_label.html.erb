@@ -3,10 +3,10 @@
 <% identifier = options.delete :identifier %>
 <% id = [class_name, identifier, attribute].map { |s| s.to_s.downcase }.join('_').tr('[', '_').tr(']', '_') %>
 <% html = {
-    class: ['myg-label', options[:class]].join(' '),
-    for: id
+  class: ['myg-label', options[:class]].join(' '),
+  for: id
 } %>
 
 <%= content_tag 'label', options.merge(html) do %>
-    <%= block.html_safe %>
+  <%= block.html_safe %>
 <% end %>

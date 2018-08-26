@@ -6,14 +6,14 @@
 
 ```haml
 = component 'myg/label' do
-    ...
+  ...
 ```
 
 This translates to:
 
 ```html
 <label class="myg-label mdc-label">
-    ...
+  ...
 </label>
 ```
 

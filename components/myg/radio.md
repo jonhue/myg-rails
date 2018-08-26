@@ -12,11 +12,11 @@ This translates to:
 
 ```html
 <div class="myg-radio mdc-radio">
-    <input checked="false" class="mdc-radio__native-control" type="radio" value="value" name="attribute" id="attribute" />
-    <div class="mdc-radio__background">
-        <div class="mdc-radio__outer-circle"></div>
-        <div class="mdc-radio__inner-circle"></div>
-    </div>
+  <input checked="false" class="mdc-radio__native-control" type="radio" value="value" name="attribute" id="attribute" />
+  <div class="mdc-radio__background">
+    <div class="mdc-radio__outer-circle"></div>
+    <div class="mdc-radio__inner-circle"></div>
+  </div>
 </div>
 ```
 

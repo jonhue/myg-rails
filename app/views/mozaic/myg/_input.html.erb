@@ -4,12 +4,12 @@
 <% name = class_name ? "#{class_name.to_s.downcase}[#{attribute}]" : "#{attribute}" %>
 <% id = [class_name, identifier, attribute].map { |s| s.to_s.downcase }.join('_').tr('[', '_').tr(']', '_') %>
 <% html = {
-    class: ['myg-input', options[:class]].join(' '),
-    name: name,
-    id: id
+  class: ['myg-input', options[:class]].join(' '),
+  name: name,
+  id: id
 } %>
 <% defaults = {
-    type: (attribute.to_s == 'email' || attribute.to_s == 'password' ? attribute : 'text')
+  type: (attribute.to_s == 'email' || attribute.to_s == 'password' ? attribute : 'text')
 } %>
 
 <%= tag 'input', defaults.merge(options.merge(html)) %>

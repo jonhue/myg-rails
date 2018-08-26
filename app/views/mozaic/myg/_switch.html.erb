@@ -5,20 +5,20 @@
 <% name = class_name ? "#{class_name.to_s.downcase}[#{attribute}]" : "#{attribute}" %>
 <% id = [class_name, identifier, attribute].map { |s| s.to_s.downcase }.join('_').tr('[', '_').tr(']', '_') %>
 <% wrapper_html = {
-    class: ['myg-switch mdc-switch', options.dig(:wrapper_html, :class)].join(' ')
+  class: ['myg-switch mdc-switch', options.dig(:wrapper_html, :class)].join(' ')
 } %>
 <% input_html = {
-    type: 'checkbox',
-    class: ['mdc-switch__native-control', options.dig(:input_html, :class)].join(' '),
-    name: name,
-    id: id,
-    value: values.last
+  type: 'checkbox',
+  class: ['mdc-switch__native-control', options.dig(:input_html, :class)].join(' '),
+  name: name,
+  id: id,
+  value: values.last
 } %>
 
 <%= content_tag 'div', (options[:wrapper_html] || {}).merge(wrapper_html) do %>
-    <input value="<%= values.first %>" type="hidden" name="<%= name %>" />
-    <%= tag 'input', (options[:input_html] || {}).merge(input_html) %>
-    <div class="mdc-switch__background">
-        <div class="mdc-switch__knob"></div>
-    </div>
+  <input value="<%= values.first %>" type="hidden" name="<%= name %>" />
+  <%= tag 'input', (options[:input_html] || {}).merge(input_html) %>
+  <div class="mdc-switch__background">
+    <div class="mdc-switch__knob"></div>
+  </div>
 <% end %>
