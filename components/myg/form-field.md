@@ -12,7 +12,7 @@ This translates to:
 
 ```html
 <div class="myg-form-field">
-    <input class="myg-input" type="text" name="attribute" id="attribute"></input>
+  <input class="myg-input" type="text" name="attribute" id="attribute"></input>
 </div>
 ```
 

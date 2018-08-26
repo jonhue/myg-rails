@@ -1,15 +1,15 @@
 <% html = {
-    class: ['myg-progress mdc-linear-progress', ('mdc-linear-progress--indeterminate' if options.delete(:indeterminate)), options[:class]].join(' '),
-    role: 'progressbar'
+  class: ['myg-progress mdc-linear-progress', ('mdc-linear-progress--indeterminate' if options.delete(:indeterminate)), options[:class]].join(' '),
+  role: 'progressbar'
 } %>
 
 <%= content_tag 'div', options.merge(html) do %>
-    <div class="mdc-linear-progress__buffering-dots"></div>
-    <div class="mdc-linear-progress__buffer"></div>
-    <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
-        <span class="mdc-linear-progress__bar-inner"></span>
-    </div>
-    <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
-        <span class="mdc-linear-progress__bar-inner"></span>
-    </div>
+  <div class="mdc-linear-progress__buffering-dots"></div>
+  <div class="mdc-linear-progress__buffer"></div>
+  <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+    <span class="mdc-linear-progress__bar-inner"></span>
+  </div>
+  <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+    <span class="mdc-linear-progress__bar-inner"></span>
+  </div>
 <% end %>

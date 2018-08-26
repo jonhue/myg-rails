@@ -6,14 +6,14 @@
 
 ```haml
 = component 'myg/drawer' do
-    ...
+  ...
 ```
 
 This translates to:
 
 ```html
 <aside class="myg-drawer mdc-drawer mdc-drawer--temporary">
-    ...
+  ...
 </aside>
 ```
 

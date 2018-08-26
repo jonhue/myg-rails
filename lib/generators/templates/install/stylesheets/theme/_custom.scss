@@ -1,4 +1,4 @@
-$myg-theme: (
+$myg-theme--custom: (
   accent: (
     light: #4063e8,
     base: #042ecb,
@@ -27,12 +27,4 @@ $myg-theme: (
     light: transparentize(#e7ecf0, 0.13),
     dark: transparentize(#14171a, 0.87)
   )
-);
-
-$myg-theme__scrollbar: (
-  width: myg__px(5),
-  track-background: transparent,
-  thumb-border-radius: myg__px(2.5),
-  thumb-background: myg-theme__color(border),
-  thumb-hover-background: myg-theme__color(text, dark)
 );

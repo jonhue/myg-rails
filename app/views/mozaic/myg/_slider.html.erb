@@ -1,27 +1,27 @@
 <% html = {
-    class: ['myg-slider mdc-slider', options[:class], ('mdc-slider--discrete' if options[:discrete])].join(' '),
-    tabindex: 0,
-    role: 'slider',
-    aria: {
-        valuemin: options[:min],
-        valuemax: options[:max],
-        valuenow: options[:value],
-        label: options[:label],
-        disabled: options[:disabled]
-    }
+  class: ['myg-slider mdc-slider', options[:class], ('mdc-slider--discrete' if options[:discrete])].join(' '),
+  tabindex: 0,
+  role: 'slider',
+  aria: {
+    valuemin: options[:min],
+    valuemax: options[:max],
+    valuenow: options[:value],
+    label: options[:label],
+    disabled: options[:disabled]
+  }
 } %>
 
 <%= content_tag 'div', options.merge(html) do %>
-    <div class="mdc-slider__track-container">
-        <div class="mdc-slider__track"></div>
-    </div>
-    <div class="mdc-slider__thumb-container">
-        <% if options[:discrete] %><div class="mdc-slider__pin">
-            <span class="mdc-slider__pin-value-marker"></span>
-        </div><% end %>
-        <svg class="mdc-slider__thumb" width="21" height="21">
-            <circle cx="10.5" cy="10.5" r="7.875"></circle>
-        </svg>
-        <div class="mdc-slider__focus-ring"></div>
-    </div>
+  <div class="mdc-slider__track-container">
+    <div class="mdc-slider__track"></div>
+  </div>
+  <div class="mdc-slider__thumb-container">
+    <% if options[:discrete] %><div class="mdc-slider__pin">
+      <span class="mdc-slider__pin-value-marker"></span>
+    </div><% end %>
+    <svg class="mdc-slider__thumb" width="21" height="21">
+      <circle cx="10.5" cy="10.5" r="7.875"></circle>
+    </svg>
+    <div class="mdc-slider__focus-ring"></div>
+  </div>
 <% end %>

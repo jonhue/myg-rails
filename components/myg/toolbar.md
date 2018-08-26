@@ -6,14 +6,14 @@
 
 ```haml
 = component 'myg/toolbar' do
-    ...
+  ...
 ```
 
 This translates to:
 
 ```html
 <aside class="myg-toolbar mdc-toolbar">
-    ...
+  ...
 </aside>
 ```
 

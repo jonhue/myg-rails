@@ -1,64 +1,64 @@
 <% wrapper_html = {
-    class: [('myg-form-field' unless options[:file]), ('-inline-label' if options[:inline_label]), ('-floating-label' if options[:floating_label]), ('myg-form-field--file' if options[:file]), options.dig(:wrapper_html, :class)].join(' ')
+  class: [('myg-form-field' unless options[:file]), ('-inline-label' if options[:inline_label]), ('-floating-label' if options[:floating_label]), ('myg-form-field--file' if options[:file]), options.dig(:wrapper_html, :class)].join(' ')
 } %>
 <% if options[:floating_label] %><% input_html = {
-    class_name: options[:class_name],
-    attribute: options[:attribute],
-    identifier: options[:identifier],
-    placeholder: options[:floating_label]
+  class_name: options[:class_name],
+  attribute: options[:attribute],
+  identifier: options[:identifier],
+  placeholder: options[:floating_label]
 } %><% else %><% input_html = {
-    class_name: options[:class_name],
-    attribute: options[:attribute],
-    identifier: options[:identifier]
+  class_name: options[:class_name],
+  attribute: options[:attribute],
+  identifier: options[:identifier]
 } %><% end %>
 <% input_defaults = {
-    type: ('file' if options[:file])
+  type: ('file' if options[:file])
 } %>
 <% label_html = {
-    class_name: options[:class_name],
-    attribute: options[:attribute],
-    identifier: options[:identifier]
+  class_name: options[:class_name],
+  attribute: options[:attribute],
+  identifier: options[:identifier]
 } %>
 <% label_secondary_html = label_html.merge({
-    class: ['myg-label--secondary', options.dig(:label_html, :class)].join(' ')
+  class: ['myg-label--secondary', options.dig(:label_html, :class)].join(' ')
 }) %>
 <% label_wrapper_html = {
-    class: ['myg-label__container', options.dig(:label_wrapper_html, :class)].join(' ')
+  class: ['myg-label__container', options.dig(:label_wrapper_html, :class)].join(' ')
 } %>
 
 <%= content_tag 'div', (options[:wrapper_html] || {}).merge(wrapper_html) do %>
-    <% if options[:label] %>
-        <% unless options[:label].is_a? Array %>
-            <%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:label].html_safe %><% end %>
-        <% else %>
-            <%= content_tag 'div', (options[:label_wrapper_html] || {}).merge(label_wrapper_html) do %>
-                <% options[:label].each_with_index do |label, index| %>
-                    <%= component 'myg/label', (options[:label_html] || {}).merge((index == 0 ? label_html : label_secondary_html)) do %><%= label.html_safe %><% end %>
-                <% end %>
-            <% end %>
-        <% end %>
-    <% end %>
-    <% if options[:floating_label] %>
-        <%= content_tag 'div', class: 'myg-input__container' do %>
-            <%= component "myg/#{options[:as]}", input_defaults.merge((options[:input_html] || {}).merge(input_html)) %>
-            <%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:floating_label] %><% end %>
-        <% end %>
+  <% if options[:label] %>
+    <% unless options[:label].is_a? Array %>
+      <%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:label].html_safe %><% end %>
     <% else %>
-        <%= component "myg/#{options[:as]}", input_defaults.merge((options[:input_html] || {}).merge(input_html)) %>
-        <% if options[:file] %><%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:file] %><% end %><% end %>
-    <% end %>
-    <% if options[:inline_label] %>
-        <% unless options[:inline_label].is_a? Array %>
-            <%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:inline_label] %><% end %>
-        <% else %>
-            <%= content_tag 'div', (options[:label_wrapper_html] || {}).merge(label_wrapper_html) do %>
-                <% options[:inline_label].each_with_index do |label, index| %>
-                    <%= component 'myg/label', (options[:label_html] || {}).merge((index == 0 ? label_html : label_secondary_html)) do %><%= label.html_safe %><% end %>
-                <% end %>
-            <% end %>
+      <%= content_tag 'div', (options[:label_wrapper_html] || {}).merge(label_wrapper_html) do %>
+        <% options[:label].each_with_index do |label, index| %>
+          <%= component 'myg/label', (options[:label_html] || {}).merge((index == 0 ? label_html : label_secondary_html)) do %><%= label.html_safe %><% end %>
         <% end %>
+      <% end %>
     <% end %>
-    <% if options[:hint] %>
-        <%= component 'myg/hint', options[:hint_html] || {} do %><%= options[:hint].html_safe %><% end %>
+  <% end %>
+  <% if options[:floating_label] %>
+    <%= content_tag 'div', class: 'myg-input__container' do %>
+      <%= component "myg/#{options[:as]}", input_defaults.merge((options[:input_html] || {}).merge(input_html)) %>
+      <%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:floating_label] %><% end %>
     <% end %>
+  <% else %>
+    <%= component "myg/#{options[:as]}", input_defaults.merge((options[:input_html] || {}).merge(input_html)) %>
+    <% if options[:file] %><%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:file] %><% end %><% end %>
+  <% end %>
+  <% if options[:inline_label] %>
+    <% unless options[:inline_label].is_a? Array %>
+      <%= component 'myg/label', (options[:label_html] || {}).merge(label_html) do %><%= options[:inline_label] %><% end %>
+    <% else %>
+      <%= content_tag 'div', (options[:label_wrapper_html] || {}).merge(label_wrapper_html) do %>
+        <% options[:inline_label].each_with_index do |label, index| %>
+          <%= component 'myg/label', (options[:label_html] || {}).merge((index == 0 ? label_html : label_secondary_html)) do %><%= label.html_safe %><% end %>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+  <% if options[:hint] %>
+    <%= component 'myg/hint', options[:hint_html] || {} do %><%= options[:hint].html_safe %><% end %>
+  <% end %>
 <% end %>
