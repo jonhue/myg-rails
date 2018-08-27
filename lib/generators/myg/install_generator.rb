@@ -80,11 +80,11 @@ module Myg
     private
 
     def stylesheets_dir
-      stylesheets_dir
+      Myg.configuration&.stylesheets_dir
     end
 
     def javascripts_dir
-      javascripts_dir
+      Myg.configuration&.javascripts_dir
     end
   end
 end
