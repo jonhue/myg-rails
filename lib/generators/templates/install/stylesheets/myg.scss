@@ -1,36 +1,34 @@
-/* CUSTOM THEMES */
-
-@import "theme/_custom";
-@import "theme/theme";
-
-/* CONFIGURATION */
-
-@import "variables/_action-button";
-@import "variables/_animate";
-@import "variables/_base";
-@import "variables/_font";
-@import "variables/_footer";
-@import "variables/_grid";
-@import "variables/_layout";
-@import "variables/_spacing";
-@import "variables/_text";
-@import "variables/_theme";
-
-// |\      /| \    / /¯¯¯¯¯ //
-// | \    / |  \  /  |      //
-// |  \  /  |   \/   |   __ //
-// |   \/   |    |   \____/ //
+// |\      /| \    / /¯¯¯¯ //
+// | \    / |  \  /  |     //
+// |  \  /  |   \/   |  __ //
+// |   \/   |    |   \___/ //
 
 @import "myg/src/myg";
 
 /* CUSTOMIZE MYG */
 
 /* Base */
+// @import "variables/_base";
 // @import "myg-base/base";
 
 /* Style */
 // @import "myg-theme/theme";
 // @import "myg-font/font";
+
+/* Custom themes */
+// @import "theme/_custom";
+// @import "theme/theme";
+
+/* Configuration */
+// @import "variables/_action-button";
+// @import "variables/_animate";
+// @import "variables/_font";
+// @import "variables/_footer";
+// @import "variables/_grid";
+// @import "variables/_layout";
+// @import "variables/_spacing";
+// @import "variables/_text";
+// @import "variables/_theme";
 
 /* Components */
 // @import "myg-action-button/action-button";
@@ -89,8 +87,8 @@
 // @include myg__classes--list;
 // @include myg__classes--progress;
 // @include myg__classes--radio;
-// @include myg__classes--tabs;
 // @include myg__classes--switch;
+// @include myg__classes--tabs;
 // @include myg__classes--text;
 // @include myg__classes--theme;
 // @include myg__classes--titlebar;
