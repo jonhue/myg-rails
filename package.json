@@ -6,7 +6,7 @@
     "eslint": "eslint lib/**/*.js"
   },
   "devDependencies": {
-    "eslint": "^5.2.0",
+    "eslint": "^5.15.3",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^2.1.0",
