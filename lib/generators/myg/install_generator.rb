@@ -46,8 +46,8 @@ module Myg
 
     def create_javascripts
       template 'javascripts/index.js.erb', "#{javascripts_dir}/index.js"
-
       return unless Myg.configuration&.es6
+
       template 'javascripts/action-button.js',
                "#{javascripts_dir}/action-button.js"
       template 'javascripts/button.js', "#{javascripts_dir}/button.js"
